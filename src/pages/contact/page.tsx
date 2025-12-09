@@ -20,7 +20,7 @@ const ContactPage = () => {
         title="Contact SPLINKOS Australia | 24/7 Support | Live Chat Email Phone"
         description="Contact SPLINKOS Australia 24/7 customer support. Live chat, email, phone support for SPLINKOS casino. Get help with account, games, bonuses, withdrawals. SPLINKOS support team ready to assist Australian players."
         keywords="Contact SPLINKOS, SPLINKOS support, SPLINKOS customer service, casino support Australia, SPLINKOS help"
-        canonicalUrl="https://splinkos.com.au/contact"
+        canonicalUrl="https://splinkos.online/contact"
         ogTitle="Contact SPLINKOS Australia | 24/7 Customer Support"
         ogDescription="Contact SPLINKOS Australia 24/7 customer support. Live chat, email, phone support available."
         structuredData={{
@@ -28,8 +28,64 @@ const ContactPage = () => {
           "@type": "ContactPage",
           "name": "Contact SPLINKOS",
           "description": "Contact SPLINKOS customer support team available 24/7",
-          "url": "https://splinkos.com.au/contact"
+          "url": "https://splinkos.online/contact",
+          "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do I claim my FREE $20 SPLINKOS bonus?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Simply create your SPLINKOS account and verify your identity. The FREE $20 bonus will be automatically credited to your account - no deposit required! You can start playing immediately at SPLINKOS."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long do SPLINKOS withdrawals take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SPLINKOS processes most withdrawals within 24-48 hours. E-wallets are typically the fastest method, while bank transfers may take 3-5 business days. SPLINKOS VIP members enjoy priority withdrawal processing."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is SPLINKOS licensed and safe?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! SPLINKOS is fully licensed and regulated. We use 256-bit SSL encryption to protect all player data and transactions. All games at SPLINKOS use certified random number generators to ensure fair play."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I play SPLINKOS games on mobile?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely! SPLINKOS is fully optimized for mobile devices. You can access the entire game library, manage your account, and claim bonuses on any smartphone or tablet. No download required - just visit SPLINKOS from your mobile browser."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What payment methods does SPLINKOS accept?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SPLINKOS supports credit/debit cards, bank transfers, e-wallets (PayPal, Skrill, Neteller), and cryptocurrency (Bitcoin, Ethereum). All payment methods at SPLINKOS are secure and processed quickly."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I set deposit limits at SPLINKOS?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Log into your SPLINKOS account, go to Settings > Responsible Gaming, and you can set daily, weekly, or monthly deposit limits. SPLINKOS is committed to promoting responsible gaming and provides comprehensive tools to help you stay in control."
+                }
+              }
+            ]
+          }
         }}
+        geoPosition="-33.8688,151.2093"
+        geoRegion="AU-NSW"
+        geoPlacename="Sydney, New South Wales, Australia"
       />
       <div className="min-h-screen bg-white">
         <header>

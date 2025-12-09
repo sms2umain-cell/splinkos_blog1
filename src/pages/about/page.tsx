@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import SEOHead from '../../components/base/SEOHead';
 import Navbar from '../../components/feature/Navbar';
 import Footer from '../../components/feature/Footer';
 
@@ -15,21 +16,37 @@ export default function AboutPage() {
 
   return (
     <>
-      <title>关于 SPLINKOS | 澳大利亚领先在线赌场 | SPLINKOS Casino Australia</title>
-      <meta name="description" content="了解 SPLINKOS Australia - 澳大利亚最受信赖的在线赌场。SPLINKOS 提供 6500+ 游戏、即时提款、24/7 客服。探索 SPLINKOS 的故事和使命。" />
-      <meta name="keywords" content="SPLINKOS, SPLINKOS Australia, 关于 SPLINKOS, SPLINKOS casino, 澳大利亚在线赌场, SPLINKOS 公司, SPLINKOS 使命" />
-      <link rel="canonical" href="https://splinkos.com.au/about" />
-      
-      <meta property="og:title" content="关于 SPLINKOS Australia Online Casino" />
-      <meta property="og:description" content="了解 SPLINKOS Australia - 澳大利亚最受信赖的在线赌场平台" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://splinkos.com.au/about" />
+      <SEOHead
+        title="About SPLINKOS | Australia's Leading Online Casino | SPLINKOS Casino Australia"
+        description="Learn about SPLINKOS Australia - Australia's most trusted online casino. SPLINKOS offers 6500+ games, instant withdrawals, 24/7 customer service. Discover SPLINKOS story and mission."
+        keywords="SPLINKOS, SPLINKOS Australia, About SPLINKOS, SPLINKOS casino, Australian online casino, SPLINKOS company, SPLINKOS mission"
+        canonicalUrl="https://splinkos.online/about"
+        ogTitle="About SPLINKOS Australia Online Casino"
+        ogDescription="Learn about SPLINKOS Australia - Australia's most trusted online casino platform"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About SPLINKOS",
+          "description": "Learn about SPLINKOS Australia - Australia's premier online casino platform",
+          "url": "https://splinkos.online/about",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "SPLINKOS Australia",
+            "url": "https://splinkos.online/",
+            "logo": "https://splinkos.com/media/ee2f31ce50a86881013b0.gif",
+            "description": "Australia's premier online casino destination with 6500+ games"
+          }
+        }}
+        geoPosition="-33.8688,151.2093"
+        geoRegion="AU-NSW"
+        geoPlacename="Sydney, New South Wales, Australia"
+      />
 
       <Navbar isScrolled={isScrolled} />
 
       <div className="min-h-screen bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900">
         <main>
-          <h1 className="sr-only">关于 SPLINKOS Australia - 澳大利亚领先在线赌场平台</h1>
+          <h1 className="sr-only">About SPLINKOS Australia - Australia's Leading Online Casino Platform</h1>
           
           {/* Hero Section */}
           <section className="relative pt-32 pb-20 px-4">

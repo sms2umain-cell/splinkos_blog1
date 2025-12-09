@@ -1,5 +1,7 @@
+
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import SEOHead from '../../components/base/SEOHead';
 import Navbar from '../../components/feature/Navbar';
 import Footer from '../../components/feature/Footer';
 import RelatedArticles from './components/RelatedArticles';
@@ -619,7 +621,7 @@ const ArticlePage = () => {
         </p>
 
         <p class="text-gray-700 leading-relaxed mb-6">
-          "Ways to win" pokies at <strong>SPLINKOS</strong> like 5 Dragons (243 ways) and Buffalo (1024 ways) pay for matching symbols on adjacent reels regardless of position. Megaways pokies at <strong>SPLINKOS</strong> take this further, offering up to 117,649 ways to win with changing reel configurations. I find ways to win pokies provide more frequent winning combinations, though individual wins may be smaller. For Australian players at <strong>SPLINKOS</strong>, ways to win games often deliver better entertainment value.
+          "Ways to win" pokies at <strong>SPLINKOS</strong> like 5 Dragons (243 ways) and Buffalo (1024 ways) pay for matching symbols on adjacent reels regardless of position. Megaways pokies at <strong>SPLINKOS</strong> take this further, offering up to 117,649 ways to win with changing reel configurations. I find ways to win games provide more frequent winning combinations, though individual wins may be smaller. For Australian players at <strong>SPLINKOS</strong>, ways to win games often deliver better entertainment value.
         </p>
 
         <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">Bankroll Management: Playing Smart at SPLINKOS</h2>
@@ -742,6 +744,50 @@ const ArticlePage = () => {
   };
 
   return (
+    <>
+      <SEOHead
+        title={`${article.title} | SPLINKOS Blog Australia`}
+        description={article.content.replace(/<[^>]*>/g, '').substring(0, 160)}
+        keywords={article.tags.join(', ')}
+        canonicalUrl={`https://splinkos.online/article/${article.id}`}
+        ogTitle={article.title}
+        ogDescription={article.content.replace(/<[^>]*>/g, '').substring(0, 160)}
+        ogImage={article.image}
+        ogType="article"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": article.title,
+          "description": article.content.replace(/<[^>]*>/g, '').substring(0, 160),
+          "image": article.image,
+          "datePublished": article.date,
+          "dateModified": new Date().toISOString(),
+          "author": {
+            "@type": "Person",
+            "name": article.author,
+            "description": article.authorBio
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "SPLINKOS Australia",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://splinkos.com/media/ee2f31ce50a86881013b0.gif"
+            }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://splinkos.online/article/${article.id}`
+          },
+          "articleSection": article.category,
+          "keywords": article.tags.join(', '),
+          "wordCount": article.content.replace(/<[^>]*>/g, '').split(' ').length
+        }}
+        geoPosition="-33.8688,151.2093"
+        geoRegion="AU-NSW"
+        geoPlacename="Sydney, New South Wales, Australia"
+      />
+    
     <div className="min-h-screen bg-white">
       <Navbar scrolled={scrolled} />
       
@@ -920,6 +966,7 @@ const ArticlePage = () => {
 
       <Footer />
     </div>
+  </>
   );
 };
 

@@ -656,7 +656,7 @@ const BlogPage = () => {
         title="SPLINKOS Blog Australia | Casino Tips, Game Guides, Strategies & News"
         description="SPLINKOS blog Australia online casino tips game guides strategies news. Expert insights on pokies, slots, live casino, sports betting, bonuses. Learn winning strategies at SPLINKOS Australia premier casino blog."
         keywords="SPLINKOS blog, casino tips Australia, pokies guide, slots strategy, casino news Australia, SPLINKOS Australia"
-        canonicalUrl="https://splinkos.com.au/blog"
+        canonicalUrl="https://splinkos.online/blog"
         ogTitle="SPLINKOS Blog Australia | Casino Tips, Game Guides & Strategies"
         ogDescription="SPLINKOS blog Australia online casino tips game guides strategies. Expert insights on pokies, slots, live casino, sports betting."
         structuredData={{
@@ -664,8 +664,37 @@ const BlogPage = () => {
           "@type": "Blog",
           "name": "SPLINKOS Blog",
           "description": "Expert insights, game reviews, strategies, and news from SPLINKOS Australia premier online casino platform",
-          "url": "https://splinkos.com.au/blog"
+          "url": "https://splinkos.online/blog",
+          "publisher": {
+            "@type": "Organization",
+            "name": "SPLINKOS Australia",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://splinkos.com/media/ee2f31ce50a86881013b0.gif"
+            }
+          },
+          "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": blogPosts.slice(0, 10).map((post, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "item": {
+                "@type": "BlogPosting",
+                "headline": post.title,
+                "description": post.excerpt,
+                "image": post.image,
+                "datePublished": post.date,
+                "author": {
+                  "@type": "Person",
+                  "name": post.author
+                }
+              }
+            }))
+          }
         }}
+        geoPosition="-33.8688,151.2093"
+        geoRegion="AU-NSW"
+        geoPlacename="Sydney, New South Wales, Australia"
       />
       <div className="min-h-screen bg-white">
         <header>
