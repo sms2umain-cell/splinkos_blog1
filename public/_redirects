@@ -1,6 +1,2 @@
-# Allow static files to be served directly
-/sitemap.xml    /sitemap.xml    200
-/robots.txt     /robots.txt     200
-
-# SPA fallback - redirect all other routes to index.html
+# SPA fallback - redirect all routes to index.html, except static files
 /*    /index.html   200
