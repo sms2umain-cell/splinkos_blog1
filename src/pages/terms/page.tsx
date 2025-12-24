@@ -17,12 +17,19 @@ const TermsPage = () => {
   return (
     <>
       <SEOHead
-        title="SPLINKOS Terms and Conditions Australia | Casino Terms of Service"
-        description="SPLINKOS Australia terms and conditions. Read SPLINKOS casino terms of service, account rules, bonus terms, withdrawal policies, responsible gaming policies. Updated January 2025."
-        keywords="SPLINKOS terms, SPLINKOS conditions, casino terms Australia, SPLINKOS rules, SPLINKOS policies"
-        canonicalUrl="https://splinkos.com.au/terms"
-        ogTitle="SPLINKOS Terms and Conditions Australia"
-        ogDescription="SPLINKOS Australia terms and conditions. Read casino terms of service and policies."
+        title="Terms and Conditions | SPLINKOS Australia Online Casino"
+        description="SPLINKOS Australia terms and conditions. Read our terms of service, user agreement, and gaming rules at SPLINKOS online casino."
+        keywords="SPLINKOS terms, terms and conditions, user agreement, SPLINKOS rules"
+        canonicalUrl="https://splinkos.online/terms"
+        ogTitle="Terms and Conditions | SPLINKOS Australia"
+        ogDescription="SPLINKOS Australia terms and conditions and user agreement."
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Terms and Conditions",
+          "description": "SPLINKOS Australia terms and conditions and user agreement",
+          "url": "https://splinkos.online/terms"
+        }}
       />
       <div className="min-h-screen bg-white">
         <header>

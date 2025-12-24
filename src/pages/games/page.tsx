@@ -132,7 +132,7 @@ const GamesPage = () => {
         title="SPLINKOS Games Australia | 6500+ Pokies Slots Live Casino Sports Betting"
         description="SPLINKOS games Australia 6500+ pokies slots live casino sports betting fishing games. Play premium Australian pokies, live dealers, table games, sports betting at SPLINKOS. High RTP games, progressive jackpots."
         keywords="SPLINKOS games, Australian pokies, online slots Australia, live casino Australia, sports betting Australia, fishing games"
-        canonicalUrl="https://splinkos.com.au/games"
+        canonicalUrl="https://splinkos.online/games"
         ogTitle="SPLINKOS Games Australia | 6500+ Pokies, Slots & Live Casino"
         ogDescription="SPLINKOS games Australia 6500+ pokies slots live casino sports betting. Play premium games at SPLINKOS."
         structuredData={{
@@ -140,8 +140,70 @@ const GamesPage = () => {
           "@type": "WebPage",
           "name": "SPLINKOS Games",
           "description": "Comprehensive guide to 6500+ games at SPLINKOS Australia including pokies, slots, live casino, sports betting, and fishing games",
-          "url": "https://splinkos.com.au/games"
+          "url": "https://splinkos.online/games",
+          "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Game",
+                  "name": "Australian Pokies",
+                  "description": "Over 2,000+ premium pokies games with high RTP rates and progressive jackpots"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "Game",
+                  "name": "Video Slots",
+                  "description": "Themed slots from top providers with Megaways and cluster pays mechanics"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "Game",
+                  "name": "Live Casino",
+                  "description": "24/7 live dealer games with HD streaming and professional dealers"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "Game",
+                  "name": "Sports Betting",
+                  "description": "Pre-match and live betting with competitive odds on all sports"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "Game",
+                  "name": "Fishing Games",
+                  "description": "Skill-based arcade games with multiplayer tournaments"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "Game",
+                  "name": "Table Games",
+                  "description": "Classic casino games including Blackjack, Roulette, and Baccarat"
+                }
+              }
+            ]
+          }
         }}
+        geoPosition="-33.8688,151.2093"
+        geoRegion="AU-NSW"
+        geoPlacename="Sydney, New South Wales, Australia"
       />
       <div className="min-h-screen bg-gray-900">
         <header>

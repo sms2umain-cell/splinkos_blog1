@@ -17,12 +17,19 @@ const ResponsibleGamingPage = () => {
   return (
     <>
       <SEOHead
-        title="SPLINKOS Responsible Gaming Australia | Safe Gaming Tools & Support"
-        description="SPLINKOS Australia responsible gaming commitment. Deposit limits, self-exclusion, gaming tools, support resources. SPLINKOS promotes safe responsible gaming practices for Australian players. Get help and support."
-        keywords="SPLINKOS responsible gaming, safe gaming Australia, gambling help Australia, SPLINKOS limits, self-exclusion"
-        canonicalUrl="https://splinkos.com.au/responsible-gaming"
-        ogTitle="SPLINKOS Responsible Gaming Australia | Safe Gaming Tools"
-        ogDescription="SPLINKOS Australia responsible gaming commitment. Deposit limits, self-exclusion, support resources."
+        title="Responsible Gaming | SPLINKOS Australia Online Casino"
+        description="SPLINKOS Australia responsible gaming information. Learn about our commitment to safe gambling, self-exclusion tools, and player protection at SPLINKOS."
+        keywords="responsible gaming, safe gambling, SPLINKOS protection, self-exclusion"
+        canonicalUrl="https://splinkos.online/responsible-gaming"
+        ogTitle="Responsible Gaming | SPLINKOS Australia"
+        ogDescription="SPLINKOS Australia responsible gaming and player protection information."
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Responsible Gaming",
+          "description": "SPLINKOS Australia responsible gaming and player protection information",
+          "url": "https://splinkos.online/responsible-gaming"
+        }}
       />
       <div className="min-h-screen bg-white">
         <header>

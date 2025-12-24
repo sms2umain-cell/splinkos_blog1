@@ -17,12 +17,19 @@ const PrivacyPage = () => {
   return (
     <>
       <SEOHead
-        title="SPLINKOS Privacy Policy Australia | Data Protection & Security"
-        description="SPLINKOS Australia privacy policy. Learn how SPLINKOS protects your personal information, data security, encryption, privacy rights. SPLINKOS commitment to player data protection and privacy compliance."
-        keywords="SPLINKOS privacy, SPLINKOS data protection, casino privacy Australia, SPLINKOS security, player privacy"
-        canonicalUrl="https://splinkos.com.au/privacy"
-        ogTitle="SPLINKOS Privacy Policy Australia | Data Protection"
-        ogDescription="SPLINKOS Australia privacy policy. Learn how SPLINKOS protects your personal information and data."
+        title="Privacy Policy | SPLINKOS Australia Online Casino"
+        description="SPLINKOS Australia privacy policy. Learn how we protect your personal information, data security measures, and privacy practices at SPLINKOS online casino."
+        keywords="SPLINKOS privacy, privacy policy, data protection, SPLINKOS security"
+        canonicalUrl="https://splinkos.online/privacy"
+        ogTitle="Privacy Policy | SPLINKOS Australia"
+        ogDescription="SPLINKOS Australia privacy policy and data protection practices."
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Privacy Policy",
+          "description": "SPLINKOS Australia privacy policy and data protection information",
+          "url": "https://splinkos.online/privacy"
+        }}
       />
       <div className="min-h-screen bg-white">
         <header>
