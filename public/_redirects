@@ -1,2 +1,74 @@
-# SPA fallback - redirect all routes to index.html, except static files
+# Backlink Tracking Redirects for splinkos.online
+
+# ============================================
+# Telegram Supplier - Guest Post Backlinks
+# Supplier: Telegram Supplier
+# Service: Guest Post Backlinks (.com/.edu/.uk)
+# Cost: $450 per batch
+# ============================================
+
+# Total tracking for Telegram Supplier
+/ref/telegram-guestpost    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_premium&utm_content=all_domains&utm_term=450usd    301
+
+# Track by domain type
+/ref/telegram-com    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_premium&utm_content=com_domain&utm_term=450usd    301
+/ref/telegram-edu    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_premium&utm_content=edu_domain&utm_term=450usd    301
+/ref/telegram-uk     /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_premium&utm_content=uk_domain&utm_term=450usd    301
+
+# Track by batch/month (2026)
+/ref/telegram-jan    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q1&utm_content=january_batch&utm_term=450usd    301
+/ref/telegram-feb    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q1&utm_content=february_batch&utm_term=450usd    301
+/ref/telegram-mar    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q1&utm_content=march_batch&utm_term=450usd    301
+/ref/telegram-apr    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q2&utm_content=april_batch&utm_term=450usd    301
+/ref/telegram-may    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q2&utm_content=may_batch&utm_term=450usd    301
+/ref/telegram-jun    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q2&utm_content=june_batch&utm_term=450usd    301
+/ref/telegram-jul    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q3&utm_content=july_batch&utm_term=450usd    301
+/ref/telegram-aug    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q3&utm_content=august_batch&utm_term=450usd    301
+/ref/telegram-sep    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q3&utm_content=september_batch&utm_term=450usd    301
+/ref/telegram-oct    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q4&utm_content=october_batch&utm_term=450usd    301
+/ref/telegram-nov    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q4&utm_content=november_batch&utm_term=450usd    301
+/ref/telegram-dec    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q4&utm_content=december_batch&utm_term=450usd    301
+
+# Combined tracking (domain type + month)
+/ref/telegram-com-jan    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q1&utm_content=com_january&utm_term=450usd    301
+/ref/telegram-edu-jan    /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q1&utm_content=edu_january&utm_term=450usd    301
+/ref/telegram-uk-jan     /?utm_source=telegram_supplier&utm_medium=guest_post&utm_campaign=2026_q1&utm_content=uk_january&utm_term=450usd    301
+
+# ============================================
+# General Partner Backlinks (Updated to 2026)
+# ============================================
+/ref/partner1    /?utm_source=partner1&utm_medium=backlink&utm_campaign=2026_q1    301
+/ref/partner2    /?utm_source=partner2&utm_medium=backlink&utm_campaign=2026_q1    301
+/ref/partner3    /?utm_source=partner3&utm_medium=backlink&utm_campaign=2026_q1    301
+/ref/partner4    /?utm_source=partner4&utm_medium=backlink&utm_campaign=2026_q1    301
+/ref/partner5    /?utm_source=partner5&utm_medium=backlink&utm_campaign=2026_q1    301
+
+# Blog specific backlinks
+/ref/blog1       /blog?utm_source=blog_partner1&utm_medium=backlink&utm_campaign=2026_q1    301
+/ref/blog2       /blog?utm_source=blog_partner2&utm_medium=backlink&utm_campaign=2026_q1    301
+
+# Games specific backlinks
+/ref/games1      /games?utm_source=games_partner1&utm_medium=backlink&utm_campaign=2026_q1    301
+/ref/games2      /games?utm_source=games_partner2&utm_medium=backlink&utm_campaign=2026_q1    301
+
+# Social media backlinks
+/ref/facebook    /?utm_source=facebook&utm_medium=social&utm_campaign=2026_q1    301
+/ref/twitter     /?utm_source=twitter&utm_medium=social&utm_campaign=2026_q1    301
+/ref/instagram   /?utm_source=instagram&utm_medium=social&utm_campaign=2026_q1    301
+/ref/youtube     /?utm_source=youtube&utm_medium=social&utm_campaign=2026_q1    301
+
+# Guest post backlinks
+/ref/guest1      /?utm_source=guest_post1&utm_medium=referral&utm_campaign=2026_q1    301
+/ref/guest2      /?utm_source=guest_post2&utm_medium=referral&utm_campaign=2026_q1    301
+/ref/guest3      /?utm_source=guest_post3&utm_medium=referral&utm_campaign=2026_q1    301
+
+# Directory backlinks
+/ref/dir1        /?utm_source=directory1&utm_medium=listing&utm_campaign=2026_q1    301
+/ref/dir2        /?utm_source=directory2&utm_medium=listing&utm_campaign=2026_q1    301
+
+# Forum backlinks
+/ref/forum1      /?utm_source=forum1&utm_medium=community&utm_campaign=2026_q1    301
+/ref/forum2      /?utm_source=forum2&utm_medium=community&utm_campaign=2026_q1    301
+
+# SPA fallback - must be last
 /*    /index.html   200
